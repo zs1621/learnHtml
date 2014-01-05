@@ -6,35 +6,95 @@
     <style>
         html { 
             display: none;
-            font-size: 10px; 
+            font-size: 87.5%; 
+        }
+        html {
+            overflow-y: scroll; 
+            font-size: 100%;
+            /* -webkit-text-size-adjust: 100%; */
+            /* -ms-text-size-adjust: 100%; */
         }
         body {
+            display: block; 
+            margin: 8px;
+        }
+        body {
+            line-height: 1.2; 
+            font: 13px/20px 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,'Hiragino Sans GB',sans-serif;
+        }
+        
+        body {
             font-size: 14px;
-            font-size: 1.4rem;
+            font-size: 1rem;
             font-family: 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,'Hiragino Sans GB',sans-serif;
             text-rendering: optimizeLegibility;
             color: #444;
             background: none repeat scroll 0 0 #F1F1F1;
         }
+        /*body  { */
+            /* line-height: 1.2;  */
+            /* font: 13px/20px 'Helvetica Neue'; */
+        /* } */
+        article, aside, details, figcaption, figure, footer,header, hgrop, nav, section {
+            display: block; 
+        }
+        .main-navigation {
+            margin-top: 24px; 
+            margin-top: 2.4rem;
+            text-align: left;
+            border-bottom: 1px solid;
+            border-width: 1px;
+            border-style: none none solid;
+        }
         
-        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-            margin: 0; 
-            padding: 0;
-            border: 0;
-            vertical-align: baseline;
+        
+        
+        body .site {
+            /* margin-top: 4.8rem; */
+            margin-bottom: 4.8rem;
+            overflow: hidden;
         }
         .site {
             margin: 0 auto; 
             max-width: 960px;
-            max-width: 96rem;
-            padding: 0 4rem;
+            max-width: 68.5714285714rem;
+            padding: 0 2.857142857rem;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
         }
-        body .site {
-            margin-top: 4.8rem; 
-            margin-bottom: 4.8rem;
-
+        .site-header {
+            padding: 24px 0; 
+            padding: 2.4px 0;
+        }
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0; 
+            padding: 0;
+            border: 0;
+            font-size: 14px;
+            vertical-align: baseline;
+        }
+        .site-content {
+            float: left; 
+            width: 65%;
+        }
+        .site-content {
+            margin: 24px 0 0; 
+            margin: 2.4rem 0 0;
+        }
+        .widget-area {
+            float: right; 
+            width: 25%;
+        }
+        .widget-area {
+            margin: 14px 0 0; 
+            margin: 1.4rem 0 0;
+        }
+        footer[role="contentinfo"] {
+            border-top: 1px solid #ededed; 
+            clear: both;
         }
     </style>
+    <!-- <link rel="stylesheet" href="./page.css"> -->
     <script>
         if (self == top) {
             document.documentElement.style.display = 'block'; 
@@ -44,8 +104,23 @@
     </script>
 </head>
 <body>
-    <div id="page" class="site">
-        ddd
+    <div id="page" class="hfeed site">
+        <header id="masthead" class="site-header">
+            <hgroup>
+            </hgroup>
+            <nav id="site-navigation" class="main-navigation">
+            </nav>
+        </header>
+        <div id="main" class="wrapper">
+            <div id="primary" class="site-content">
+            </div>
+            <div id="secondary" class="widget-area">
+            </div>
+        </div>
+        <footer id="colophon" class="contentinfo">
+            <div class="site-info">
+            </div>
+        </footer>
     </div>
 </body>
 </html>
