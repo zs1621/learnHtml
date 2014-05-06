@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute position example 2-设置偏移量,有祖先元素</title>
+    <style>
+        #box1 {
+            background: red;
+            height: 200px;
+        }
+        #box2 {
+            background: green;
+            height: 250px;
+            position: absolute;
+            top: 40px;
+            left: 20px;
+        }
+        #box3 {
+            background: yellow;
+            height: 350px;
+        }
+        #box {
+            background: #e2571e;    
+            height: 120px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+   <div id="box1" class="box">box1</div>
+   <div id="box" class="box">
+    <div id="box2" class="box">box2</div>
+   </div>
+   <div id="box3" class="box">box3dddddddddddddddd</div>
+</body>
+</html>

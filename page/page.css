@@ -114,3 +114,7 @@ footer[role="contentinfo"] {
     margin-right: auto;
     padding: 24px 0;
 }
+footer .site-info {
+    display: block;
+    margin: 0 auto;
+}
